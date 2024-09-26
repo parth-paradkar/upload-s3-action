@@ -12,7 +12,7 @@ This action upload directory to AWS S3 by [public read](https://docs.aws.amazon.
 Place in a `.yml` file such as this one in your `.github/workflows` folder. [Refer to the documentation on workflow YAML syntax here.](https://help.github.com/en/articles/workflow-syntax-for-github-actions)
 
 ```yaml
-name: Upload to S3
+name: Upload to S3 without ACL
 
 on: [pull_request]
 
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: shallwefootball/s3-upload-action@master
+      - uses: parth-paradkar/s3-upload-action-without-acl@master
         with:
           aws_key_id: ${{ secrets.AWS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
