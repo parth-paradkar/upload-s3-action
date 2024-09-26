@@ -1,4 +1,4 @@
-This is fork of [shallwefootball/upload-s3-action](https://github.com/shallwefootball/upload-s3-action) that doesn't depend on ACLs
+This is a fork of [shallwefootball/upload-s3-action](https://github.com/shallwefootball/upload-s3-action) that doesn't depend on ACLs
 
 # Upload S3 ☁️
 
